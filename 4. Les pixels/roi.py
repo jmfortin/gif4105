@@ -8,6 +8,7 @@ import pylab as plt
 from skimage.draw import polygon, circle, ellipse
 import numpy as np
 from matplotlib.patches import Ellipse
+import time
 
 
 class ROI:
@@ -33,6 +34,11 @@ class ROI:
         fig: figure that lives in
         (these three can be derived one from the other - see new_ROI)
         """
+        print('''
+        Left button: add point; 
+        middle button: delete point;
+        right button: fill polygon and stop interaction.
+        ''')
         self.previous_point = []
         self.start_point = []
         self.end_point = []
@@ -44,6 +50,7 @@ class ROI:
         self.fig =  fig
         self.fig.canvas.draw()
         self.patch = None
+        self.ts_draw = time.time()
         cid1 = fig.canvas.mpl_connect('motion_notify_event', self.motion_notify_callback)
         cid2 = fig.canvas.mpl_connect('button_press_event', self.button_press_callback)
         self.events = cid1,cid2
@@ -56,6 +63,10 @@ class ROI:
         position. If left button is held, add points to the coords list
         at each movement.
         """
+        if time.time() - self.ts_draw < 0.1:
+            return
+        else:
+            self.ts_draw = time.time()
         if event.inaxes: 
             ax = event.inaxes
             x, y = event.xdata, event.ydata
