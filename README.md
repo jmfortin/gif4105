@@ -1,6 +1,6 @@
 # Démonstrations pour le cours GIF-4105/7105
 
-Dans ce repo, vous trouverez toutes les démonstrations du cours GIF-4105/7105 Photographie Algorithmique. Celles-ci sont implémentées en python. 
+Dans ce repo, vous trouverez toutes les démonstrations du cours [GIF-4105/7105 Photographie Algorithmique](http://vision.gel.ulaval.ca/~jflalonde/cours/4105/h19/). Celles-ci sont implémentées en python. 
 
 # Procédure d'installation
 
@@ -32,3 +32,8 @@ Les "packages" suivants seront nécessaires pour l'exécution de toutes les dém
 4. [scikit-image](http://scikit-image.org/docs/dev/install.html)
 5. [matplotlib](https://matplotlib.org/users/installing.html)
 6. [Pillow](https://pypi.org/project/Pillow/2.2.1/)
+
+
+## Remerciements
+
+Merci à Jinsong Zhang pour son aide!
