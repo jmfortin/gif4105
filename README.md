@@ -51,10 +51,7 @@ Pour démarrer les démonstrations lorsque tout est installé, il suffit donc de
 
 2. Démarrer le "jupyter notebook"
 
-```
-cd gif4105-demos
-jupyter notebook
-```
+`cd gif4105-demos; jupyter notebook`
 
 Ceci démarre votre navigateur web, et vous devriez voir les différentes démonstrations disponibles. 
 
