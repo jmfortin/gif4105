@@ -1,7 +1,8 @@
-# gif4105
-GIF-4105/7105 Photographie Algorithmique
+# Démonstrations pour le cours GIF-4105/7105
 
-# Installation
+Dans ce repo, vous trouverez toutes les démonstrations du cours GIF-4105/7105 Photographie Algorithmique. Celles-ci sont implémentées en python. 
+
+# Procédure d'installation
 
 Pour exécuter les démonstrations sur votre ordinateur, voici une procédure facile d'installation. 
 
@@ -21,7 +22,7 @@ Pour exécuter les démonstrations sur votre ordinateur, voici une procédure fa
 
 ## Installation des "packages" de base nécessaires
 
-Les "packages" suivants seront nécessaires pour l'exécution de toutes les démonstrations. Pour les installer, il suffit habituellement de faire 
+Les "packages" suivants seront nécessaires pour l'exécution de toutes les démonstrations. Pour les installer, il suffit habituellement d'utiliser la commande suivante, _après avoir démarré le "virtualenv"_:
 
 `pip install <packagename>`
 
