@@ -14,11 +14,11 @@ Pour exécuter les démonstrations sur votre ordinateur, voici une procédure fa
   
 2. Se créer un environment virtuel pour le cours
 
-`virtualenv gif4105`
+`virtualenv gif4105-env`
 
 3. Démarrer l'environnement virtuel du cours
 
-`source gif4105/bin/activate`
+`source gif4105-env/bin/activate`
 
 ## Installation des "packages" de base nécessaires
 
@@ -33,6 +33,30 @@ Les "packages" suivants seront nécessaires pour l'exécution de toutes les dém
 5. [matplotlib](https://matplotlib.org/users/installing.html)
 6. [Pillow](https://pypi.org/project/Pillow/2.2.1/)
 
+## Cloner les démonstration de github
+
+1. Installez [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) sur votre ordinateur, si vous ne l'avez pas déjà. 
+
+2. Clonez le "repo" du cours: 
+
+`git clone https://github.com/lvsn/gif4105.git gif4105-demos`
+
+# Démarrage des démonstrations
+
+Pour démarrer les démonstrations lorsque tout est installé, il suffit donc de: 
+
+1. Activer le "virtualenv"
+
+`source gif4105-env/bin/activate`
+
+2. Démarrer le "jupyter notebook"
+
+```
+cd gif4105-demos
+jupyter notebook
+```
+
+Ceci démarre votre navigateur web, et vous devriez voir les différentes démonstrations disponibles. 
 
 ## Remerciements
 
