@@ -66,6 +66,7 @@ class ROI:
         if time.time() - self.ts_draw < 0.1:
             return
         else:
+            return
             self.ts_draw = time.time()
         if event.inaxes: 
             ax = event.inaxes
@@ -127,6 +128,8 @@ class ROI:
                 self.line = self.lines[-1]
                    
             elif event.button == 3 and self.line != None: # right button: close the loop
+                self.line = plt.Line2D([x,  x],[y, y],marker = '.')
+                self.fig.canvas.draw()
                 self.line.set_data([self.previous_point[0], self.start_point[0]],
                                    [self.previous_point[1], self.start_point[1]])                       
                 ax.add_line(self.line)
